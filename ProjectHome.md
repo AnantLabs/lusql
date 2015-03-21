@@ -1,0 +1,5 @@
+LuSql is a simple but powerful tool for building Lucene indexes from relational databases. It is a command-line Java application for the construction of a Lucene index from an arbitrary SQL query of a JDBC-accessible SQL database. It allows a user to control a number of parameters, including the SQL query to use, individual indexing/storage/term-vector nature of fields, analyzer, stop word list, and other tuning parameters. In its default mode it uses threading to take advantage of multiple cores.
+
+LuSql can handle complex queries, allows for additional per record sub-queries, and has a plug-in architecture for arbitrary Lucene document manipulation. Its only dependencies are three Apache Commons libraries, the Lucene core itself, and a JDBC driver.
+
+LuSql has been extensively tested, including a large 6+ million full-text & article metadata document collection, producing an 86GB Lucene index.
